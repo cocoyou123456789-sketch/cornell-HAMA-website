@@ -289,6 +289,61 @@ h2 {
   color: #fff;
 }
 
+.network {
+  background: #fff;
+}
+
+.network-layout {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.8fr) minmax(420px, 1.2fr);
+  gap: 60px;
+  align-items: start;
+}
+
+.network-layout > div:first-child {
+  position: sticky;
+  top: 120px;
+}
+
+.network-layout p {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(17px, 1.8vw, 22px);
+}
+
+.chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.chapter-grid article {
+  min-height: 240px;
+  padding: 30px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.chapter-grid span {
+  display: block;
+  margin-bottom: 36px;
+  color: var(--cornell-red);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.chapter-grid h3 {
+  margin: 0 0 16px;
+  font-size: clamp(22px, 2.4vw, 31px);
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.chapter-grid p {
+  font-size: 15px;
+}
+
 .split {
   display: grid;
   grid-template-columns: minmax(280px, 0.85fr) minmax(280px, 1fr);
@@ -468,6 +523,14 @@ h2 {
   .work-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .network-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .network-layout > div:first-child {
+    position: static;
+  }
 }
 
 @media (max-width: 760px) {
@@ -513,6 +576,7 @@ h2 {
   }
 
   .work-grid,
+  .chapter-grid,
   .link-row,
   .split,
   .subscribe-layout,
