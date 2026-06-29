@@ -171,17 +171,13 @@ a {
   align-items: center;
   justify-content: center;
   padding: 96px 24px;
-  color: #fff;
+  color: var(--ink);
   text-align: center;
-  background-image: url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2200&q=85");
-  background-position: center;
-  background-size: cover;
+  background: #fff;
 }
 
 .hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.56));
+  display: none;
 }
 
 .hero-content {
@@ -211,6 +207,7 @@ p {
 
 h1 {
   margin: 0;
+  color: var(--cornell-red);
   font-size: clamp(44px, 8vw, 94px);
   line-height: 0.96;
   font-weight: 800;
