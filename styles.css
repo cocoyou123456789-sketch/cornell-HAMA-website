@@ -72,7 +72,7 @@ a {
 
 .brand-logo {
   display: block;
-  width: min(270px, 24vw);
+  width: 88px;
   height: auto;
 }
 
@@ -672,7 +672,7 @@ h2 {
   }
 
   .brand-logo {
-    width: min(220px, 66vw);
+    width: 76px;
   }
 
   .apply-link {
