@@ -312,6 +312,13 @@ h2 {
   display: grid;
   gap: 20px;
   align-content: start;
+  color: inherit;
+  transition: transform 180ms ease;
+}
+
+.person-card:hover,
+.person-card:focus-visible {
+  transform: translateY(-4px);
 }
 
 .person-card img {
@@ -329,14 +336,15 @@ h2 {
 }
 
 .person-card p,
-.person-card a {
+.person-detail dd,
+.person-email {
   display: block;
   margin: 0;
   color: var(--ink);
   font-size: 17px;
 }
 
-.person-card a {
+.person-email {
   color: var(--cornell-red);
   font-weight: 700;
 }
@@ -344,6 +352,86 @@ h2 {
 .person-role {
   font-size: 20px;
   font-weight: 800;
+}
+
+.person-detail {
+  display: none;
+  padding: 76px 36px 96px;
+  background: #fff;
+  scroll-margin-top: 126px;
+}
+
+.person-detail:target {
+  display: block;
+}
+
+.person-detail-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(300px, 0.72fr);
+  gap: clamp(48px, 8vw, 118px);
+  align-items: start;
+}
+
+.person-detail-layout > img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center 34%;
+}
+
+.person-detail-content {
+  padding-top: 4px;
+}
+
+.back-link {
+  width: 42px;
+  height: 42px;
+  display: inline-grid;
+  place-items: center;
+  margin-bottom: 34px;
+  border: 1px solid rgba(179, 27, 27, 0.58);
+  border-radius: 6px;
+  color: var(--cornell-red);
+  font-size: 34px;
+  line-height: 1;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  color: #fff;
+  background: var(--cornell-red);
+}
+
+.person-detail h2 {
+  margin: 0 0 38px;
+  color: var(--cornell-red);
+  font-size: clamp(44px, 5vw, 76px);
+  line-height: 0.98;
+  text-transform: none;
+}
+
+.person-detail dl {
+  display: grid;
+  gap: 22px;
+  margin: 0 0 34px;
+}
+
+.person-detail dl div {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+}
+
+.person-detail dt {
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.person-detail dd {
+  color: var(--muted);
+  font-weight: 700;
 }
 
 .work-grid {
@@ -651,6 +739,11 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .person-detail-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
   .network-layout {
     grid-template-columns: 1fr;
   }
@@ -714,5 +807,23 @@ h2 {
   .subscribe-form button,
   .form-message {
     grid-column: auto;
+  }
+
+  .person-detail {
+    padding: 56px 20px 72px;
+    scroll-margin-top: 104px;
+  }
+
+  .person-detail-layout > img {
+    aspect-ratio: 1 / 1;
+  }
+
+  .person-detail h2 {
+    margin-bottom: 28px;
+  }
+
+  .person-detail dl div {
+    display: grid;
+    gap: 2px;
   }
 }
