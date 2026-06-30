@@ -679,6 +679,194 @@ h2 {
   text-transform: uppercase;
 }
 
+.lobby-page {
+  min-height: 100vh;
+  background: #0f0f0f;
+}
+
+.lobby-header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 34px;
+  color: rgba(255, 255, 255, 0.72);
+  background: #111;
+  font-size: 14px;
+}
+
+.lobby-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  background: var(--cornell-red);
+}
+
+.lobby-mark img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.lobby-header a:hover,
+.lobby-header a:focus-visible {
+  color: #fff;
+}
+
+.lobby-main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(430px, 0.92fr);
+  padding-top: 62px;
+}
+
+.lobby-intro {
+  display: flex;
+  align-items: center;
+  padding: 72px 68px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 82% 12%, rgba(179, 27, 27, 0.24), transparent 24%),
+    radial-gradient(circle at 12% 100%, rgba(179, 27, 27, 0.18), transparent 20%),
+    #111;
+}
+
+.lobby-copy {
+  width: min(610px, 100%);
+}
+
+.lobby-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 28px;
+  color: var(--cornell-red);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.lobby-kicker span {
+  width: 28px;
+  height: 2px;
+  background: var(--cornell-red);
+}
+
+.lobby-copy h1 {
+  margin: 0;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 5.4vw, 72px);
+  font-weight: 700;
+  line-height: 1.08;
+  text-transform: none;
+}
+
+.lobby-copy h1 strong {
+  color: var(--cornell-red);
+  font-weight: inherit;
+}
+
+.lobby-copy > p:last-child {
+  width: min(520px, 100%);
+  margin: 28px 0 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.lobby-auth {
+  display: grid;
+  place-items: center;
+  padding: 72px 48px;
+  background: #fafafa;
+}
+
+.auth-card {
+  width: min(420px, 100%);
+  padding: 46px 42px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.18);
+}
+
+.auth-required {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  color: var(--cornell-red);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.auth-required span {
+  width: 11px;
+  height: 11px;
+  border-radius: 999px;
+  background: var(--cornell-red);
+}
+
+.auth-card h2 {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.auth-card p {
+  margin: 0;
+  color: #747474;
+  font-size: 15px;
+}
+
+.google-button {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 34px 0 26px;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  color: #262626;
+  background: #fff;
+  font-weight: 800;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.google-button span {
+  color: #4285f4;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.google-button:hover,
+.google-button:focus-visible {
+  border-color: var(--cornell-red);
+}
+
+.auth-help {
+  text-align: center;
+  font-size: 12px;
+}
+
+.auth-help a {
+  color: var(--cornell-red);
+  font-weight: 700;
+}
+
 @media (max-width: 1120px) {
   .site-header {
     grid-template-columns: auto minmax(0, 1fr) auto;
@@ -750,6 +938,15 @@ h2 {
 
   .network-layout > div:first-child {
     position: static;
+  }
+
+  .lobby-main {
+    grid-template-columns: 1fr;
+  }
+
+  .lobby-intro,
+  .lobby-auth {
+    min-height: 50vh;
   }
 }
 
@@ -825,5 +1022,19 @@ h2 {
   .person-detail dl div {
     display: grid;
     gap: 2px;
+  }
+
+  .lobby-header {
+    padding: 10px 18px;
+  }
+
+  .lobby-intro,
+  .lobby-auth {
+    padding: 52px 22px;
+  }
+
+  .auth-card {
+    padding: 34px 24px;
+    border-radius: 18px;
   }
 }
