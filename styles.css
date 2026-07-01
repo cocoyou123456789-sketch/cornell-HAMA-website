@@ -302,15 +302,20 @@ h2 {
   background: #fff;
 }
 
+.people .section-inner {
+  width: min(1760px, 100%);
+}
+
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 76px 84px;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 92px 54px;
+  align-items: start;
 }
 
 .person-card {
   display: grid;
-  gap: 20px;
+  gap: 16px;
   align-content: start;
   color: inherit;
   transition: transform 180ms ease;
@@ -329,9 +334,9 @@ h2 {
 }
 
 .person-card h3 {
-  margin: 0 0 4px;
+  margin: 0 0 3px;
   color: var(--cornell-red);
-  font-size: clamp(24px, 2.5vw, 31px);
+  font-size: 20px;
   line-height: 1.1;
 }
 
@@ -341,7 +346,8 @@ h2 {
   display: block;
   margin: 0;
   color: var(--ink);
-  font-size: 17px;
+  font-size: 14px;
+  line-height: 1.25;
 }
 
 .person-email {
@@ -350,8 +356,16 @@ h2 {
 }
 
 .person-role {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 800;
+}
+
+.person-major {
+  font-weight: 800;
+}
+
+.person-contact {
+  color: var(--muted);
 }
 
 .person-detail {
