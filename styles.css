@@ -448,6 +448,93 @@ h2 {
   font-weight: 700;
 }
 
+.profile-page {
+  padding: 76px 36px 96px;
+  background: #fff;
+}
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(300px, 0.72fr);
+  gap: clamp(48px, 8vw, 118px);
+  align-items: start;
+}
+
+.profile-photo {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center 34%;
+}
+
+.profile-content {
+  padding-top: 4px;
+}
+
+.profile-content h1,
+.profile-missing h1 {
+  margin: 0 0 38px;
+  color: var(--cornell-red);
+  font-size: clamp(44px, 5vw, 76px);
+  line-height: 0.98;
+  text-transform: none;
+}
+
+.profile-content dl {
+  display: grid;
+  gap: 22px;
+  margin: 0 0 34px;
+}
+
+.profile-content dl div {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+}
+
+.profile-content dt {
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.profile-content dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.profile-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  min-height: 28px;
+  color: #000;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.linkedin-link:hover,
+.linkedin-link:focus-visible {
+  color: var(--cornell-red);
+}
+
+.profile-missing {
+  display: grid;
+  gap: 18px;
+}
+
 .work-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -946,6 +1033,11 @@ h2 {
     gap: 34px;
   }
 
+  .profile-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
   .network-layout {
     grid-template-columns: 1fr;
   }
@@ -1034,6 +1126,24 @@ h2 {
   }
 
   .person-detail dl div {
+    display: grid;
+    gap: 2px;
+  }
+
+  .profile-page {
+    padding: 56px 20px 72px;
+  }
+
+  .profile-photo {
+    aspect-ratio: 1 / 1;
+  }
+
+  .profile-content h1,
+  .profile-missing h1 {
+    margin-bottom: 28px;
+  }
+
+  .profile-content dl div {
     display: grid;
     gap: 2px;
   }
