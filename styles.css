@@ -507,10 +507,9 @@ h2 {
 }
 
 .profile-links {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 12px;
+  justify-items: start;
 }
 
 .linkedin-link {

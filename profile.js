@@ -42,6 +42,7 @@ if (!profile) {
     email.href = `mailto:${profile.email}`;
     email.textContent = profile.email;
   } else {
-    email.remove();
+    email.removeAttribute("href");
+    email.textContent = "Email TBD";
   }
 }
