@@ -35,7 +35,7 @@ window.HAMA_PEOPLE = [
   {
     id: "coco-you",
     name: "Coco You",
-    image: "assets/coco-you.png",
+    image: "assets/coco-you-cropped.png",
     role: "Co-VP of Outreach",
     major: "Information Science / Business",
     linkedin: "https://www.linkedin.com/search/results/people/?keywords=Coco%20You%20Cornell%20HAMA",
