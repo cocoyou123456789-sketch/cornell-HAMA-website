@@ -36,6 +36,7 @@ if (!profile) {
   profile.details.forEach(([label, value]) => details.append(createDetail(label, value)));
 
   linkedin.href = profile.linkedin;
+  linkedin.textContent = `${profile.name} LinkedIn`;
   linkedin.setAttribute("aria-label", `${profile.name} LinkedIn`);
 
   if (profile.email) {
