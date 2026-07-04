@@ -33,6 +33,22 @@ window.HAMA_PEOPLE = [
     ]
   },
   {
+    id: "coco-you",
+    name: "Coco You",
+    image: "assets/coco-you.png",
+    role: "Co-VP of Outreach",
+    major: "Information Science / Business",
+    linkedin: "https://www.linkedin.com/search/results/people/?keywords=Coco%20You%20Cornell%20HAMA",
+    details: [
+      ["Year", "Class of 2028"],
+      ["Hometown", "China"],
+      ["Major", "Information Science / Business"],
+      ["Internship", "Investment Banking Fixed Income at China Merchants Securities"],
+      ["Previous Role(s)", "Co-VP of Outreach"],
+      ["Fun Fact", "I play tennis and I have three cats."]
+    ]
+  },
+  {
     id: "ishan-patel",
     name: "Ishan Patel",
     image: "assets/ishan-patel.png",
