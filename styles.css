@@ -67,13 +67,17 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
   min-width: 0;
 }
 
 .brand-logo {
   display: block;
-  width: 88px;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .site-nav {
@@ -809,7 +813,7 @@ h2 {
 .lobby-mark img {
   width: 32px;
   height: 32px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .lobby-header a:hover,
@@ -1062,7 +1066,12 @@ h2 {
   }
 
   .brand-logo {
+    width: 100%;
+  }
+
+  .brand {
     width: 76px;
+    height: 76px;
   }
 
   .apply-link {

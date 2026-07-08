@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 264" role="img" aria-labelledby="title">
+  <title id="title">HAMA</title>
+  <rect width="264" height="264" fill="#ffffff"/>
+  <rect x="10" y="10" width="244" height="244" fill="#ffffff" stroke="#b31b1b" stroke-width="8"/>
+  <rect x="18" y="18" width="110" height="110" fill="#b31b1b"/>
+  <rect x="136" y="136" width="110" height="110" fill="#b31b1b"/>
+  <line x1="132" y1="14" x2="132" y2="250" stroke="#b31b1b" stroke-width="4"/>
+  <line x1="14" y1="132" x2="250" y2="132" stroke="#b31b1b" stroke-width="4"/>
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="84" dominant-baseline="middle" text-anchor="middle">
+    <text x="73" y="74" fill="#ffffff">H</text>
+    <text x="191" y="74" fill="#b31b1b">A</text>
+    <text x="73" y="192" fill="#b31b1b">M</text>
+    <text x="191" y="192" fill="#ffffff">A</text>
+  </g>
+</svg>
