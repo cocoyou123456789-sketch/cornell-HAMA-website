@@ -22,7 +22,7 @@ window.HAMA_PEOPLE = [
     image: "assets/landan-chu.jpeg",
     role: "Co-VP of Outreach",
     major: "Hotel Administration / Real Estate",
-    linkedin: "https://www.linkedin.com/search/results/people/?keywords=Landan%20Chu%20Cornell%20HAMA",
+    linkedin: "https://www.linkedin.com/in/landan-chu/",
     details: [
       ["Year", "Undergraduate"],
       ["Hometown", "San Diego, CA"],
@@ -101,7 +101,7 @@ window.HAMA_PEOPLE = [
     role: "Co-VP of Recruitment",
     major: "Global Development",
     email: "eg674@cornell.edu",
-    linkedin: "https://www.linkedin.com/search/results/people/?keywords=Emilia%20Gomez%20Alarcon%20Cornell%20HAMA",
+    linkedin: "https://www.linkedin.com/in/emilia-gomez-alarcón/",
     details: [
       ["Hometown", "Scarsdale, New York"],
       ["Major", "Global Development"],
