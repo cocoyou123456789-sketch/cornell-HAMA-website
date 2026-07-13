@@ -23,6 +23,22 @@ if (!profile) {
   `;
 } else {
   document.title = `${profile.name} | Cornell HAMA`;
+  const description = document.querySelector('meta[name="description"]');
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  const ogDescription = document.querySelector('meta[property="og:description"]');
+  const profileDescription = `${profile.name}, ${profile.role} at Cornell HAMA.`;
+
+  if (description) {
+    description.setAttribute("content", profileDescription);
+  }
+
+  if (ogTitle) {
+    ogTitle.setAttribute("content", `${profile.name} | Cornell HAMA`);
+  }
+
+  if (ogDescription) {
+    ogDescription.setAttribute("content", profileDescription);
+  }
 
   const image = document.querySelector("[data-profile-image]");
   const name = document.querySelector("[data-profile-name]");
