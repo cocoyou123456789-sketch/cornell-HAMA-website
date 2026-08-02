@@ -49,7 +49,9 @@ if (!profile) {
   image.src = profile.image;
   image.alt = profile.name;
   name.textContent = profile.name;
-  profile.details.forEach(([label, value]) => details.append(createDetail(label, value)));
+  profile.details
+    .filter(([label]) => label !== "Previous Role(s)")
+    .forEach(([label, value]) => details.append(createDetail(label, value)));
 
   linkedin.href = profile.linkedin;
   linkedin.textContent = `${profile.name} LinkedIn`;

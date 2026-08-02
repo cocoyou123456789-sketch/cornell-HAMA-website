@@ -1,5 +1,23 @@
 window.HAMA_PEOPLE = [
   {
+    id: "max-wadhwa",
+    name: "Max Wadhwa",
+    image: "assets/max-wadhwa.png",
+    role: "President",
+    major: "Hotel Administration",
+    email: "mjw352@cornell.edu",
+    linkedin: "https://www.linkedin.com/in/maxwadhwa",
+    details: [
+      ["Year", "2028"],
+      ["Hometown", "Chicago, Illinois"],
+      ["Major", "Hotel Administration"],
+      ["Minors", "Real Estate and Information Science"],
+      ["Internships", "Highgate, SLR Capital Partners"],
+      ["Campus Involvement", "Student Agencies Real Estate, Hotel Ezra Cornell, Cornell Research Union"],
+      ["Fun Fact", "Avid Beli user."]
+    ]
+  },
+  {
     id: "emily-liu",
     name: "Emily Liu",
     image: "assets/emily-liu.png",
@@ -12,7 +30,6 @@ window.HAMA_PEOPLE = [
       ["Hometown", "Mountainside, New Jersey"],
       ["Major", "Nolan School of Hotel Administration"],
       ["Internships", "Chartres Lodging Group"],
-      ["Previous Role(s)", "Co-President"],
       ["Fun Fact", "Has two cats."]
     ]
   },
@@ -28,7 +45,6 @@ window.HAMA_PEOPLE = [
       ["Hometown", "San Diego, CA"],
       ["Major", "Hotel Administration / Real Estate"],
       ["Internships", "BGO"],
-      ["Previous Role(s)", "Co-VP of Outreach"],
       ["Fun Fact", "Avid golfer, amateur musician, and wholehearted foodie."]
     ]
   },
@@ -44,7 +60,6 @@ window.HAMA_PEOPLE = [
       ["Hometown", "China"],
       ["Major", "Information Science / Business"],
       ["Internship", "Investment Banking Fixed Income at China Merchants Securities"],
-      ["Previous Role(s)", "Co-VP of Outreach"],
       ["Fun Fact", "I play tennis and I have three cats."]
     ]
   },
@@ -60,7 +75,6 @@ window.HAMA_PEOPLE = [
       ["Major", "Hotel Administration"],
       ["Minor", "Real Estate"],
       ["Working", "Development Intern at Bourn Companies in Tucson, AZ"],
-      ["Previous Role(s)", "VP of Professional Development"],
       ["Fun Fact", "I'm a ski fanatic."]
     ]
   },
@@ -75,7 +89,6 @@ window.HAMA_PEOPLE = [
       ["Major", "Industrial and Labor Relations"],
       ["Minor", "Business and Real Estate"],
       ["Working", "AVR Realty"],
-      ["Previous Role(s)", "Vice President"],
       ["Fun Fact", "I play tennis."]
     ]
   },
@@ -90,7 +103,6 @@ window.HAMA_PEOPLE = [
       ["Hometown", "Las Vegas"],
       ["Major", "Hotel / Real Estate"],
       ["Working", "Summer Associate at Weitzman Associates"],
-      ["Previous Role(s)", "VP of Recruitment"],
       ["Fun Fact", "I have a growing soccer jersey collection."]
     ]
   },
@@ -107,7 +119,6 @@ window.HAMA_PEOPLE = [
       ["Major", "Global Development"],
       ["Minors", "Real Estate, Architecture, Demography, Law + Society"],
       ["Working", "Office of the New York City Comptroller + Artemis Real Estate"],
-      ["Previous Role(s)", "Co-VP of Recruitment"],
       ["Fun Fact", "I'm a racecar driver."]
     ]
   },
@@ -122,7 +133,6 @@ window.HAMA_PEOPLE = [
       ["Hometown", "Miami, Florida"],
       ["Major", "Hospitality"],
       ["Working", "Life Time Fitness"],
-      ["Previous Role(s)", "VP of Finance"],
       ["Fun Fact", "My favorite ice cream is soft serve chocolate vanilla swirl."]
     ]
   }
