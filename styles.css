@@ -453,20 +453,6 @@ h2 {
   color: var(--muted);
 }
 
-.person-badge {
-  display: inline-flex;
-  align-items: center;
-  width: max-content;
-  margin-top: 9px;
-  padding: 5px 9px;
-  color: #fff;
-  background: var(--cornell-red);
-  font-size: 11px;
-  font-weight: 900;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
 .person-detail {
   display: none;
   padding: 76px 36px 96px;

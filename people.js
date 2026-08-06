@@ -30,6 +30,9 @@ function createPersonCard(person) {
   image.decoding = "async";
   image.src = person.image;
   image.alt = person.name;
+  if (person.imagePosition) {
+    image.style.objectPosition = person.imagePosition;
+  }
 
   const content = document.createElement("div");
   const name = document.createElement("h3");
@@ -46,13 +49,6 @@ function createPersonCard(person) {
   contact.textContent = person.email || "Email TBD";
 
   content.append(name, role, major, contact);
-
-  if (person.role.toLowerCase() === "president") {
-    const badge = document.createElement("span");
-    badge.className = "person-badge";
-    badge.textContent = "President";
-    content.append(badge);
-  }
 
   card.append(image, content);
   return card;
