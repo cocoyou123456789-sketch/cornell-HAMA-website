@@ -3,7 +3,7 @@ window.HAMA_PEOPLE = [
     id: "max-wadhwa",
     name: "Max Wadhwa",
     image: "assets/max-wadhwa.png",
-    imagePosition: "center 28%",
+    imagePosition: "center 18%",
     role: "President",
     major: "Hotel Administration",
     email: "mjw352@cornell.edu",
