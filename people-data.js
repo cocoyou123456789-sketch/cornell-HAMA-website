@@ -71,6 +71,7 @@ window.HAMA_PEOPLE = [
     image: "assets/ishan-patel.png",
     role: "VP of Professional Development",
     major: "Hotel Administration",
+    email: "iap36@cornell.edu",
     linkedin: "https://www.linkedin.com/search/results/people/?keywords=Ishan%20Patel%20Cornell%20HAMA",
     details: [
       ["Hometown", "Oklahoma City, OK"],
