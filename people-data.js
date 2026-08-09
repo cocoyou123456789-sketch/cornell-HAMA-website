@@ -54,13 +54,13 @@ window.HAMA_PEOPLE = [
     name: "Coco You",
     image: "assets/coco-you-cropped.png",
     role: "Co-VP of Outreach",
-    major: "Information Science / Business",
+    major: "Information Science / Environment & Sustainability",
     email: "ly458@cornell.edu",
     linkedin: "https://www.linkedin.com/search/results/people/?keywords=Coco%20You%20Cornell%20HAMA",
     details: [
       ["Year", "Class of 2028"],
       ["Hometown", "China"],
-      ["Major", "Information Science / Business"],
+      ["Major", "Information Science / Environment & Sustainability"],
       ["Internship", "Investment Banking Fixed Income at China Merchants Securities"],
       ["Fun Fact", "I play tennis and I have three cats."]
     ]
