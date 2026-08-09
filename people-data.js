@@ -133,6 +133,7 @@ window.HAMA_PEOPLE = [
     image: "assets/lindsay-ng.png",
     role: "VP of Finance",
     major: "Hospitality",
+    email: "lsn37@cornell.edu",
     linkedin: "https://www.linkedin.com/search/results/people/?keywords=Lindsay%20Ng%20Cornell%20HAMA",
     details: [
       ["Hometown", "Miami, Florida"],
