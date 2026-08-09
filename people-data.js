@@ -59,7 +59,6 @@ window.HAMA_PEOPLE = [
     linkedin: "https://www.linkedin.com/search/results/people/?keywords=Coco%20You%20Cornell%20HAMA",
     details: [
       ["Year", "Class of 2028"],
-      ["Hometown", "China"],
       ["Major", "Hotel Administration"],
       ["Internship", "China Merchants Securities"],
       ["Fun Fact", "I play tennis and I have three cats."]
