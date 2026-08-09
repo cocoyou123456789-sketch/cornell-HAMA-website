@@ -54,13 +54,13 @@ window.HAMA_PEOPLE = [
     name: "Coco You",
     image: "assets/coco-you-cropped.png",
     role: "Co-VP of Outreach",
-    major: "Information Science / Environment & Sustainability",
+    major: "Hotel Administration",
     email: "ly458@cornell.edu",
     linkedin: "https://www.linkedin.com/search/results/people/?keywords=Coco%20You%20Cornell%20HAMA",
     details: [
       ["Year", "Class of 2028"],
       ["Hometown", "China"],
-      ["Major", "Information Science / Environment & Sustainability"],
+      ["Major", "Hotel Administration"],
       ["Internship", "China Merchants Securities"],
       ["Fun Fact", "I play tennis and I have three cats."]
     ]
@@ -101,12 +101,12 @@ window.HAMA_PEOPLE = [
     name: "Spencer Kim",
     image: "assets/spencer-kim.png",
     role: "VP of Recruitment",
-    major: "Hotel / Real Estate",
+    major: "Hotel Administration",
     email: "sjk268@cornell.edu",
     linkedin: "https://www.linkedin.com/search/results/people/?keywords=Spencer%20Kim%20Cornell%20HAMA",
     details: [
       ["Hometown", "Las Vegas"],
-      ["Major", "Hotel / Real Estate"],
+      ["Major", "Hotel Administration"],
       ["Working", "Summer Associate at Weitzman Associates"],
       ["Fun Fact", "I have a growing soccer jersey collection."]
     ]
@@ -132,12 +132,12 @@ window.HAMA_PEOPLE = [
     name: "Lindsay Ng",
     image: "assets/lindsay-ng.png",
     role: "VP of Finance",
-    major: "Hospitality",
+    major: "Hotel Administration",
     email: "lsn37@cornell.edu",
     linkedin: "https://www.linkedin.com/search/results/people/?keywords=Lindsay%20Ng%20Cornell%20HAMA",
     details: [
       ["Hometown", "Miami, Florida"],
-      ["Major", "Hospitality"],
+      ["Major", "Hotel Administration"],
       ["Working", "Life Time Fitness"],
       ["Fun Fact", "My favorite ice cream is soft serve chocolate vanilla swirl."]
     ]
