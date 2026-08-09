@@ -61,7 +61,7 @@ window.HAMA_PEOPLE = [
       ["Year", "Class of 2028"],
       ["Hometown", "China"],
       ["Major", "Information Science / Environment & Sustainability"],
-      ["Internship", "Investment Banking Fixed Income at China Merchants Securities"],
+      ["Internship", "China Merchants Securities"],
       ["Fun Fact", "I play tennis and I have three cats."]
     ]
   },
