@@ -85,6 +85,7 @@ window.HAMA_PEOPLE = [
     image: "assets/zoie-vitale.png",
     role: "Vice President",
     major: "Industrial and Labor Relations",
+    email: "zfv2@cornell.edu",
     linkedin: "https://www.linkedin.com/search/results/people/?keywords=Zoie%20Vitale%20Cornell%20HAMA",
     details: [
       ["Major", "Industrial and Labor Relations"],
