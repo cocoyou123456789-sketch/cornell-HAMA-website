@@ -102,6 +102,7 @@ window.HAMA_PEOPLE = [
     image: "assets/spencer-kim.png",
     role: "VP of Recruitment",
     major: "Hotel / Real Estate",
+    email: "sjk268@cornell.edu",
     linkedin: "https://www.linkedin.com/search/results/people/?keywords=Spencer%20Kim%20Cornell%20HAMA",
     details: [
       ["Hometown", "Las Vegas"],
