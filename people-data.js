@@ -31,6 +31,7 @@ window.HAMA_PEOPLE = [
       ["Hometown", "Mountainside, New Jersey"],
       ["Major", "Nolan School of Hotel Administration"],
       ["Internships", "Chartres Lodging Group"],
+      ["Other Campus Involvement", "CREC, CUABS"],
       ["Fun Fact", "Has two cats."]
     ]
   },
@@ -107,6 +108,7 @@ window.HAMA_PEOPLE = [
       ["Hometown", "Las Vegas"],
       ["Major", "Hotel Administration"],
       ["Working", "Summer Associate at Weitzman Associates"],
+      ["Other Campus Involvement", "Hotel Ezra Cornell (Director of Programming), Slope Day Programming Board (Vice President)"],
       ["Fun Fact", "I have a growing soccer jersey collection."]
     ]
   },
@@ -123,6 +125,8 @@ window.HAMA_PEOPLE = [
       ["Major", "Global Development"],
       ["Minors", "Real Estate, Architecture, Demography, Law + Society"],
       ["Working", "Office of the New York City Comptroller + Artemis Real Estate"],
+      ["Social Sorority", "Delta Gamma (Vice President of Membership)"],
+      ["Other Campus Involvement", "PSE (Vice President of Public Relations), CREC"],
       ["Fun Fact", "I'm a racecar driver."]
     ]
   },
