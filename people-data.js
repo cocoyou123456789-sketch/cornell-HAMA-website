@@ -55,7 +55,7 @@ window.HAMA_PEOPLE = [
     name: "Landan Chu",
     image: "assets/landan-chu.jpeg",
     role: "Co-VP of Outreach",
-    major: "Hotel Administration / Real Estate",
+    major: "Hotel Administration",
     email: "lyc33@cornell.edu",
     linkedin: "https://www.linkedin.com/in/landan-chu/",
     details: [
