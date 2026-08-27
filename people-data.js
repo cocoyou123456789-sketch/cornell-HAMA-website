@@ -56,12 +56,12 @@ window.HAMA_PEOPLE = [
     name: "Coco You",
     image: "assets/coco-you-cropped.png",
     role: "Co-VP of Outreach",
-    major: "Hotel Administration",
+    major: "Information Science",
     email: "ly458@cornell.edu",
     linkedin: "https://www.linkedin.com/search/results/people/?keywords=Coco%20You%20Cornell%20HAMA",
     details: [
       ["Year", "Class of 2028"],
-      ["Major", "Hotel Administration"],
+      ["Major", "Information Science"],
       ["Internship", "China Merchants Securities"],
       ["Fun Fact", "I play tennis and I have three cats."]
     ]
