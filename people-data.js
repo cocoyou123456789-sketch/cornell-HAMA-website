@@ -36,6 +36,21 @@ window.HAMA_PEOPLE = [
     ]
   },
   {
+    id: "zoie-vitale",
+    name: "Zoie Vitale",
+    image: "assets/zoie-vitale.png",
+    role: "Vice President",
+    major: "Industrial and Labor Relations",
+    email: "zfv2@cornell.edu",
+    linkedin: "https://www.linkedin.com/search/results/people/?keywords=Zoie%20Vitale%20Cornell%20HAMA",
+    details: [
+      ["Major", "Industrial and Labor Relations"],
+      ["Minor", "Business and Real Estate"],
+      ["Working", "AVR Realty"],
+      ["Fun Fact", "I play tennis."]
+    ]
+  },
+  {
     id: "landan-chu",
     name: "Landan Chu",
     image: "assets/landan-chu.jpeg",
@@ -80,21 +95,6 @@ window.HAMA_PEOPLE = [
       ["Minor", "Real Estate"],
       ["Working", "Development Intern at Bourn Companies in Tucson, AZ"],
       ["Fun Fact", "I'm a ski fanatic."]
-    ]
-  },
-  {
-    id: "zoie-vitale",
-    name: "Zoie Vitale",
-    image: "assets/zoie-vitale.png",
-    role: "Vice President",
-    major: "Industrial and Labor Relations",
-    email: "zfv2@cornell.edu",
-    linkedin: "https://www.linkedin.com/search/results/people/?keywords=Zoie%20Vitale%20Cornell%20HAMA",
-    details: [
-      ["Major", "Industrial and Labor Relations"],
-      ["Minor", "Business and Real Estate"],
-      ["Working", "AVR Realty"],
-      ["Fun Fact", "I play tennis."]
     ]
   },
   {
