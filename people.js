@@ -1,16 +1,5 @@
 const peopleGrid = document.querySelector("[data-people-grid]");
 
-function detailValue(person, label) {
-  const detail = person.details.find(([detailLabel]) => detailLabel === label);
-  return detail ? detail[1] : "";
-}
-
-function classSuffix(person) {
-  const year = detailValue(person, "Year");
-  const match = year.match(/20(\d{2})/);
-  return match ? ` '${match[1]}` : "";
-}
-
 function cardMajor(person) {
   return person.major.replace(/^Nolan School of /, "");
 }
@@ -40,7 +29,7 @@ function createPersonCard(person) {
   const major = document.createElement("p");
   const contact = document.createElement("p");
 
-  name.textContent = `${person.name}${classSuffix(person)}`;
+  name.textContent = person.name;
   role.className = "person-role";
   role.textContent = person.role;
   major.className = "person-major";
