@@ -123,9 +123,15 @@ h3 {
   min-height: 640px;
   grid-column: 2;
   grid-row: 1;
-  background:
-    linear-gradient(180deg, rgba(23, 23, 25, 0.05), rgba(23, 23, 25, 0.48)),
-    url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=84") center / cover;
+  background-color: var(--night);
+  background-image:
+    linear-gradient(145deg, rgba(82, 21, 27, 0.18), rgba(23, 23, 25, 0.52)),
+    url("assets/hama-mark.svg"),
+    repeating-linear-gradient(90deg, rgba(201, 166, 107, 0.09) 0 1px, transparent 1px 76px),
+    repeating-linear-gradient(0deg, rgba(201, 166, 107, 0.06) 0 1px, transparent 1px 76px);
+  background-position: center;
+  background-repeat: no-repeat, no-repeat, repeat, repeat;
+  background-size: cover, 54%, auto, auto;
 }
 
 .hero-media::before {
@@ -506,13 +512,33 @@ input:focus-visible {
 }
 
 .feature-band {
+  position: relative;
+  overflow: hidden;
   min-height: min(760px, 82vh);
   display: flex;
   align-items: flex-end;
   color: #fff;
-  background:
-    linear-gradient(180deg, rgba(18, 18, 19, 0.06) 20%, rgba(18, 18, 19, 0.92) 100%),
-    url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=2000&q=84") center / cover;
+  background-color: var(--wine);
+  background-image:
+    linear-gradient(135deg, rgba(23, 23, 25, 0.56), rgba(82, 21, 27, 0.18)),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.055) 0 1px, transparent 1px 96px);
+}
+
+.feature-band::before {
+  position: absolute;
+  top: 50%;
+  right: clamp(-80px, -4vw, -30px);
+  width: min(48vw, 600px);
+  aspect-ratio: 1;
+  content: "";
+  background: url("assets/hama-mark.svg") center / contain no-repeat;
+  opacity: 0.08;
+  transform: translateY(-50%) rotate(6deg);
+}
+
+.feature-band .section-inner {
+  position: relative;
+  z-index: 1;
 }
 
 .feature-band .split {
