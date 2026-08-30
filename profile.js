@@ -26,7 +26,13 @@ if (!profile) {
   const description = document.querySelector('meta[name="description"]');
   const ogTitle = document.querySelector('meta[property="og:title"]');
   const ogDescription = document.querySelector('meta[property="og:description"]');
+  const ogImage = document.querySelector('meta[property="og:image"]');
+  const ogImageAlt = document.querySelector('meta[property="og:image:alt"]');
+  const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+  const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+  const twitterImage = document.querySelector('meta[name="twitter:image"]');
   const profileDescription = `${profile.name}, ${profile.role} at Cornell HAMA.`;
+  const profileImage = new URL(profile.image, window.location.origin).href;
 
   if (description) {
     description.setAttribute("content", profileDescription);
@@ -38,6 +44,26 @@ if (!profile) {
 
   if (ogDescription) {
     ogDescription.setAttribute("content", profileDescription);
+  }
+
+  if (ogImage) {
+    ogImage.setAttribute("content", profileImage);
+  }
+
+  if (ogImageAlt) {
+    ogImageAlt.setAttribute("content", profile.name);
+  }
+
+  if (twitterTitle) {
+    twitterTitle.setAttribute("content", `${profile.name} | Cornell HAMA`);
+  }
+
+  if (twitterDescription) {
+    twitterDescription.setAttribute("content", profileDescription);
+  }
+
+  if (twitterImage) {
+    twitterImage.setAttribute("content", profileImage);
   }
 
   const image = document.querySelector("[data-profile-image]");
