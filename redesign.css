@@ -44,9 +44,15 @@ h3 {
 }
 
 .brand {
-  width: 56px;
-  height: 56px;
-  background: #fff;
+  width: auto;
+  height: auto;
+  color: #fff;
+  background: transparent;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
 }
 
 .site-nav {
@@ -240,20 +246,6 @@ h3 {
   border-color: var(--gold);
 }
 
-.hero-rail {
-  position: absolute;
-  z-index: 2;
-  right: 18px;
-  bottom: 26px;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.58);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  writing-mode: vertical-rl;
-}
-
 @media (max-width: 1120px) {
   .site-header {
     padding: 12px 20px;
@@ -293,8 +285,9 @@ h3 {
   }
 
   .brand {
-    width: 48px;
-    height: 48px;
+    width: auto;
+    height: auto;
+    font-size: 20px;
   }
 
   .hero {
@@ -343,9 +336,6 @@ h3 {
     margin-top: 32px;
   }
 
-  .hero-rail {
-    display: none;
-  }
 }
 
 /* Shared editorial system */
