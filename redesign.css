@@ -208,6 +208,72 @@ h3 {
   border-color: var(--cornell-red);
 }
 
+.application {
+  padding-top: clamp(64px, 7vw, 92px);
+  padding-bottom: clamp(64px, 7vw, 92px);
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+
+.application-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+  gap: clamp(48px, 8vw, 104px);
+  align-items: center;
+}
+
+.application-copy h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(38px, 4.8vw, 58px);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.application-copy > p:last-of-type {
+  max-width: 650px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.application-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.coffee-chat-qr {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  color: var(--ink);
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.coffee-chat-qr img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #fff;
+}
+
+.coffee-chat-qr span {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.coffee-chat-qr:hover,
+.coffee-chat-qr:focus-visible {
+  color: var(--cornell-red);
+  border-color: var(--cornell-red);
+}
+
 .section {
   padding: clamp(72px, 8vw, 108px) clamp(22px, 5vw, 72px);
 }
@@ -866,6 +932,7 @@ h3 {
   }
 
   .intro-layout,
+  .application-layout,
   .program-header,
   .feature-band .split,
   .network-layout,
@@ -876,6 +943,11 @@ h3 {
 
   .intro-copy {
     padding-top: 0;
+  }
+
+  .application-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
+    gap: 40px;
   }
 
   .program-header > p:last-child {
@@ -920,6 +992,19 @@ h3 {
   .hero-actions {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .application-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .application-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .coffee-chat-qr {
+    width: min(320px, 100%);
   }
 
   .primary-action,
