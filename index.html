@@ -20,13 +20,14 @@
     <meta name="twitter:image" content="https://cornellhama.com/assets/og-hama-2026.png">
     <link rel="icon" href="assets/hama-mark.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css?v=20260830-2">
-    <link rel="stylesheet" href="redesign.css?v=20260903-2">
+    <link rel="stylesheet" href="redesign.css?v=20260904-3">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" data-header>
       <a class="brand" href="/index.html#home" aria-label="Cornell HAMA home">
-        <span aria-hidden="true">HAMA</span>
+        <img class="brand-logo" src="assets/hama-mark.svg" alt="">
+        <span class="brand-name" aria-hidden="true">Cornell HAMA</span>
       </a>
 
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
@@ -49,9 +50,12 @@
 
     <main id="main">
       <section class="hero" id="home" aria-label="Cornell HAMA">
-        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/hama-mark.svg" alt="">
+        </div>
         <div class="hero-content">
-          <h1>Hospitality asset management at Cornell</h1>
+          <p class="hero-kicker">Cornell University · Student Chapter</p>
+          <h1>Hospitality Asset Managers Association</h1>
           <p class="hero-deck">
             Cornell HAMA connects students with the people and ideas shaping hotel ownership, investment, and operations.
           </p>
@@ -60,6 +64,7 @@
             <a class="text-action" href="#about">About the chapter</a>
           </div>
         </div>
+        <a class="scroll-cue" href="#about" aria-label="Explore Cornell HAMA"><span></span></a>
       </section>
 
       <section class="section intro" id="about">
@@ -164,7 +169,22 @@
         </div>
       </section>
 
-      <section class="section subscribe" id="alumni">
+      <section class="leadership-preview" aria-labelledby="leadership-preview-title">
+        <div class="leadership-heading">
+          <p class="eyebrow">Our People</p>
+          <h2 id="leadership-preview-title">Student-led.<br>Industry-minded.</h2>
+          <a href="people.html">Meet the executive board <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="leadership-mosaic" aria-label="Cornell HAMA executive board members">
+          <img src="assets/max-wadhwa.png" alt="Max Wadhwa, President">
+          <img src="assets/emily-liu.png" alt="Emily Liu, Co-President">
+          <img src="assets/zoie-vitale.png" alt="Zoie Vitale, Vice President">
+          <img src="assets/landan-chu.jpeg" alt="Landan Chu, Co-VP of Outreach">
+          <img src="assets/coco-you-cropped.png" alt="Coco You, Co-VP of Outreach">
+        </div>
+      </section>
+
+      <section class="section subscribe" id="updates">
         <div class="section-inner subscribe-layout">
           <div>
             <p class="eyebrow">Updates</p>
@@ -223,9 +243,6 @@
         </div>
       </section>
 
-      <section class="section link-row" aria-label="Quick links">
-        <a href="mailto:hama@cornell.edu?subject=Alumni%20Network"><span>Alumni</span>Connect with the HAMA network</a>
-      </section>
     </main>
 
     <footer class="site-footer">
