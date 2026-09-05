@@ -82,8 +82,9 @@ h1, h2, h3 { color: var(--ink); font-family: Georgia, "Times New Roman", serif; 
 .network { background: var(--paper); }
 .network-layout > div:first-child { position: sticky; top: 120px; }
 .network-layout > div:first-child > p:last-child { margin: 28px 0 0; color: var(--muted); font-size: 16px; line-height: 1.75; }
-.chapter-grid { display: grid; grid-template-columns: 1fr; border-top: 1px solid var(--line); border-left: 0; }
-.chapter-grid article, .chapter-grid article:nth-child(odd), .chapter-grid article:nth-child(even) { min-height: 0; padding: 26px 0; border: 0; border-bottom: 1px solid var(--line); }
+.chapter-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.chapter-grid article, .chapter-grid article:nth-child(odd), .chapter-grid article:nth-child(even) { min-height: 0; padding: 25px 24px; border: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.chapter-grid .student-chapter { grid-column: 1 / -1; background: #fff7f5; }
 .chapter-grid h3 { margin: 0 0 8px; color: var(--cornell-red); font-family: Georgia, "Times New Roman", serif; font-size: 24px; font-weight: 400; }
 .chapter-grid p { margin: 0; color: var(--muted); font-size: 14px; }
 
@@ -218,6 +219,8 @@ h1, h2, h3 { color: var(--ink); font-family: Georgia, "Times New Roman", serif; 
   .primary-action, .text-action { width: 100%; }
   .section { padding: 70px 20px; }
   .work-grid, .people-grid, .subscribe-form { grid-template-columns: 1fr; }
+  .chapter-grid { grid-template-columns: 1fr; }
+  .chapter-grid .student-chapter { grid-column: auto; }
   .work-grid article, .work-grid article:first-child { min-height: 290px; }
   .leadership-heading { margin-bottom: 36px; }
   .leadership-mosaic { grid-template-columns: repeat(2, minmax(0, 1fr)); }
