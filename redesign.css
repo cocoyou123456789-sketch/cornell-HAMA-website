@@ -54,7 +54,7 @@ h1, h2, h3 { color: var(--ink); font-family: Georgia, "Times New Roman", serif; 
 /* Editorial content */
 .intro { background: var(--paper); }
 .intro-layout, .program-header, .feature-band .split, .network-layout, .subscribe-layout { display: grid; grid-template-columns: minmax(280px, 0.88fr) minmax(360px, 1.12fr); gap: clamp(48px, 9vw, 130px); align-items: start; }
-.intro h2, .program-header h2, .network h2, .subscribe h2, .feature-band h2, .leadership-heading h2 { margin: 0; font-size: clamp(42px, 5.2vw, 70px); line-height: 1.03; }
+.intro h2, .program-header h2, .network h2, .subscribe h2, .feature-band h2 { margin: 0; font-size: clamp(42px, 5.2vw, 70px); line-height: 1.03; }
 .intro-copy { padding-top: 32px; }
 .intro-copy > p:first-child { margin: 0; color: var(--ink); font-size: 19px; line-height: 1.8; }
 .intro .intro-note { margin: 30px 0 0; padding: 24px 0 0; color: var(--muted); border-top: 1px solid var(--line); font-size: 16px; }
@@ -87,22 +87,6 @@ h1, h2, h3 { color: var(--ink); font-family: Georgia, "Times New Roman", serif; 
 .chapter-grid .student-chapter { grid-column: 1 / -1; background: #fff7f5; }
 .chapter-grid h3 { margin: 0 0 8px; color: var(--cornell-red); font-family: Georgia, "Times New Roman", serif; font-size: 24px; font-weight: 400; }
 .chapter-grid p { margin: 0; color: var(--muted); font-size: 14px; }
-
-/* A calm, approachable preview using known HAMA members only. */
-.leadership-preview { padding: clamp(82px, 9vw, 132px) clamp(22px, 5vw, 76px); color: var(--ink); background: #fff7f5; }
-.leadership-heading { width: min(1180px, 100%); margin: 0 auto 48px; text-align: center; }
-.leadership-heading .eyebrow { color: var(--cornell-red); }
-.leadership-heading h2 { color: var(--ink); }
-.leadership-heading > p:not(.eyebrow) { max-width: 630px; margin: 22px auto 0; color: var(--muted); font-size: 16px; }
-.leadership-heading > a { display: inline-flex; align-items: center; margin-top: 28px; padding-bottom: 6px; color: var(--cornell-red); border-bottom: 1px solid var(--cornell-red); font-size: 12px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; }
-.leadership-heading > a span { margin-left: 12px; }
-.leadership-mosaic { width: min(1180px, 100%); display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(14px, 2vw, 24px); margin: 0 auto; }
-.leadership-mosaic > a { display: block; color: var(--ink); }
-.leadership-mosaic img { width: 100%; min-height: 0; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%; filter: none; border: 1px solid var(--line); transition: transform 200ms ease, box-shadow 200ms ease; }
-.leadership-mosaic > a:hover img, .leadership-mosaic > a:focus-visible img { transform: translateY(-4px); box-shadow: var(--shadow); }
-.leadership-mosaic span { display: grid; gap: 2px; padding-top: 14px; }
-.leadership-mosaic strong { font-family: Georgia, "Times New Roman", serif; font-size: 19px; font-weight: 400; line-height: 1.2; }
-.leadership-mosaic small { color: var(--cornell-red); font-size: 11px; font-weight: 700; letter-spacing: 0.05em; line-height: 1.4; text-transform: uppercase; }
 
 /* Mailing list */
 .subscribe { color: var(--ink); background: #fff; border-top: 1px solid var(--line); }
@@ -182,7 +166,6 @@ h1, h2, h3 { color: var(--ink); font-family: Georgia, "Times New Roman", serif; 
 @media (max-width: 1060px) {
   .brand-name { display: none; }
   .work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .leadership-mosaic { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 @media (max-width: 900px) {
@@ -222,9 +205,6 @@ h1, h2, h3 { color: var(--ink); font-family: Georgia, "Times New Roman", serif; 
   .chapter-grid { grid-template-columns: 1fr; }
   .chapter-grid .student-chapter { grid-column: auto; }
   .work-grid article, .work-grid article:first-child { min-height: 290px; }
-  .leadership-heading { margin-bottom: 36px; }
-  .leadership-mosaic { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .leadership-mosaic > a:last-child { grid-column: 1 / -1; width: calc(50% - 7px); justify-self: center; }
   .coffee-chat-panel { grid-template-columns: 1fr; }
   .coffee-chat-qr { width: min(300px, 100%); }
   .people-grid { gap: 46px; }
