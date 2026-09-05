@@ -373,15 +373,8 @@ h3 {
 }
 
 .work-grid article::before {
-  position: static;
-  display: block;
-  margin-bottom: 32px;
-  content: "0" counter(program);
-  color: #a59f99;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  display: none;
+  content: none;
 }
 
 .work-grid article:hover {
@@ -966,7 +959,6 @@ h3 {
 
   .work-grid article,
   .work-grid article:first-child { min-height: 0; padding: 28px 24px; }
-  .work-grid article::before { margin-bottom: 22px; }
   .chapter-grid .student-chapter { grid-column: auto; }
   .subscribe-form { padding: 24px 20px; }
   .subscribe-form button, .form-message { grid-column: 1; }
