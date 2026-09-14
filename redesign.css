@@ -373,10 +373,17 @@ h1, h2, h3 {
   border-bottom: 1px solid var(--line);
 }
 
-.chapter-grid .student-chapter { grid-column: auto; padding: 24px 22px; background: var(--cornell-red); }
-.chapter-grid h3 { margin: 0; color: var(--burgundy); font-size: 20px; line-height: 1.2; }
+.chapter-grid article.student-chapter {
+  grid-column: auto;
+  grid-template-columns: minmax(170px, 0.62fr) minmax(0, 1fr);
+  gap: 30px;
+  padding: 27px 30px;
+  overflow: hidden;
+  background: var(--cornell-red);
+}
+.chapter-grid h3 { min-width: 0; margin: 0; color: var(--burgundy); font-size: 20px; line-height: 1.2; }
 .chapter-grid p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
-.chapter-grid .student-chapter h3, .chapter-grid .student-chapter p { color: #fff; }
+.chapter-grid article.student-chapter h3, .chapter-grid article.student-chapter p { color: #fff; }
 
 /* Mailing list */
 .subscribe { color: var(--ink); background: var(--paper); border-top: 1px solid var(--line); }
@@ -759,7 +766,7 @@ h1, h2, h3 {
   .work-grid p { grid-column: 2; }
 
   .chapter-grid article, .chapter-grid article:nth-child(odd), .chapter-grid article:nth-child(even) { grid-template-columns: 1fr; gap: 6px; }
-  .chapter-grid .student-chapter { padding: 23px 20px; }
+  .chapter-grid article.student-chapter { grid-template-columns: 1fr; gap: 8px; padding: 23px 20px; }
 
   .people-grid, .subscribe-form { grid-template-columns: 1fr; }
   .subscribe-form { padding: 26px 21px; box-shadow: 8px 8px 0 var(--soft); }
