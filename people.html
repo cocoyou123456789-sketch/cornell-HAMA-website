@@ -20,7 +20,7 @@
     <meta name="twitter:image" content="https://cornellhama.com/assets/og-hama-2026.png">
     <link rel="icon" href="assets/hama-mark.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css?v=20260830-2">
-    <link rel="stylesheet" href="redesign.css?v=20260914-1">
+    <link rel="stylesheet" href="redesign.css?v=20260914-2">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -62,6 +62,26 @@
         </div>
       </section>
 
+      <dialog class="person-preview" data-person-preview aria-labelledby="person-preview-name">
+        <div class="person-preview-shell">
+          <button class="person-preview-close" type="button" data-person-preview-close aria-label="Close profile preview">×</button>
+          <div class="person-preview-copy">
+            <p class="person-preview-role" data-person-preview-role></p>
+            <h2 id="person-preview-name" data-person-preview-name></h2>
+            <p class="person-preview-intro" data-person-preview-intro></p>
+            <dl class="person-preview-facts" data-person-preview-facts></dl>
+            <div class="person-preview-actions">
+              <a class="primary-action" data-person-preview-link href="#">Learn more</a>
+              <a class="person-preview-email" data-person-preview-email href=""></a>
+            </div>
+          </div>
+          <figure class="person-preview-portrait">
+            <img data-person-preview-image src="" alt="">
+            <figcaption data-person-preview-caption></figcaption>
+          </figure>
+        </div>
+      </dialog>
+
     </main>
 
     <footer class="site-footer">
@@ -76,7 +96,7 @@
     </footer>
 
     <script src="people-data.js?v=20260827-6"></script>
-    <script src="people.js?v=20260827-4"></script>
+    <script src="people.js?v=20260914-1"></script>
     <script src="script.js?v=20260904-1"></script>
   </body>
 </html>
